@@ -1,19 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+    background: linear-gradient(to right, #333, #555);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -23,7 +19,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -32,21 +28,27 @@ nav ul li a {
 }
 
 section {
-    padding: 2rem;
-    border-bottom: 1px solid #ddd;
-}
-
-section h2 {
-    color: #333;
+    padding: 2rem 0;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem 0;
     background: #333;
     color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 1rem 0;
 }
 
+.container {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.list-group-item {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.form-control, .btn {
+    border-radius: 0;
+}
